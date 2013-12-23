@@ -98,7 +98,7 @@
                     <!--</descriptors>-->
                     <!--<archive>-->
                         <!--<manifest>-->
-                            <!--<mainClass>com.dianping.data.autotest.QTestUtil</mainClass>-->
+                            <!--<mainClass>com.dianping.data.dwautotestst.QTestUtil</mainClass>-->
                             <!--<addClasspath>true</addClasspath>-->
                         <!--</manifest>-->
                     <!--</archive>-->

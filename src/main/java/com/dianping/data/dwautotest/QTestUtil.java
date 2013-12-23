@@ -1,4 +1,4 @@
-package com.dianping.data.autotest;
+package com.dianping.data.dwautotest;
 
 import org.apache.hadoop.hive.cli.CliDriver;
 import org.apache.hadoop.hive.cli.CliSessionState;
