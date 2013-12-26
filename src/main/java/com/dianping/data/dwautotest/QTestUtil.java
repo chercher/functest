@@ -218,6 +218,9 @@ public class QTestUtil {
                 failedCases.add(qname + ".q");
                 System.err.println("Test " + qfiles[i].getName()
                         + "results check failed.");
+            } else {
+                System.out.println("Test " + qfiles[i].getName()
+                        + "results check successed.");
             }
         }
         return failedCases;
