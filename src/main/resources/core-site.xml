@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  
+  <property>
+    <name>fs.default.name</name>
+    <value>hdfs://cosmos03.beta/</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>hadoop.tmp.dir</name>
+    <value>/data</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>fs.trash.interval</name>
+    <value>1440</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>io.file.buffer.size</name>
+    <value>65536</value>
+  </property>
+
+  <!--<property>-->
+    <!--<name>io.compression.codecs</name>-->
+    <!--<value>org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,com.hadoop.compression.lzo.LzoCodec,com.hadoop.compression.lzo.LzopCodec,org.apache.hadoop.io.compress.BZip2Codec</value>-->
+  <!--</property>-->
+
+  <!--<property>-->
+    <!--<name>io.compression.codec.lzo.class</name>-->
+    <!--<value>com.hadoop.compression.lzo.LzoCodec</value>-->
+  <!--</property>-->
+
+  <!--<property>-->
+      <!--<name>lzo.text.input.format.ignore.nonlzo</name>-->
+      <!--<value>false</value>-->
+  <!--</property>-->
+
+  <property>
+    <name>hadoop.security.authentication</name>
+    <value>kerberos</value>
+  </property>
+
+  <property>
+    <name>hadoop.security.authorization</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>topology.script.file.name</name>
+    <value>/usr/local/hadoop/hadoop-release/bin/get_rack.sh</value>
+  </property>
+
+  <property>
+    <name>hadoop.proxyuser.hadoop.groups</name>
+    <value>hadoop,op,work,biteam,www,tuangou,search,mobile</value>
+  </property>
+
+  <property>
+    <name>hadoop.proxyuser.hadoop.hosts</name>
+    <value>cosmos01.beta</value>
+  </property>
+
+</configuration>

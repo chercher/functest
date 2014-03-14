@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+  <property>
+    <name>dfs.data.dir</name>
+    <value>/data/dfs/data</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>dfs.http.address</name>
+    <value>cosmos03.beta:50070</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>dfs.secondary.http.address</name>
+    <value>cosmos04.beta:50090</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>dfs.datanode.du.reserved</name>
+    <value>1073741824</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>dfs.umaskmode</name>
+    <value>027</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>dfs.hosts.exclude</name>
+    <value>/usr/local/hadoop/hadoop-release/conf/hosts.exclude</value>
+    <final>true</final>
+  </property>
+
+  <property>
+    <name>dfs.block.size</name>
+    <value>134217728</value>
+  </property>
+
+  <property>
+    <name>dfs.datanode.max.xcievers</name>
+    <value>2048</value>
+  </property>
+
+  <property>
+    <name>dfs.datanode.handler.count</name>
+    <value>8</value>
+  </property>
+
+  <property>
+    <name>dfs.namenode.kerberos.principal</name>
+    <value>hadoop/_HOST@DIANPING.COM</value>
+  </property>
+
+  <property>
+    <name>dfs.namenode.kerberos.https.principal</name>
+    <value>host/_HOST@DIANPING.COM</value>
+  </property>
+
+  <property>
+    <name>dfs.secondary.namenode.kerberos.principal</name>
+    <value>hadoop/_HOST@DIANPING.COM</value>
+  </property>
+
+  <property>
+    <name>dfs.secondary.namenode.kerberos.https.principal</name>
+    <value>host/_HOST@DIANPING.COM</value>
+  </property>
+
+  <property>
+    <name>dfs.datanode.kerberos.principal</name>
+    <value>hadoop/_HOST@DIANPING.COM</value>
+  </property>
+
+  <property>
+    <name>dfs.datanode.kerberos.https.principal</name>
+    <value>host/_HOST@DIANPING.COM</value>
+  </property>
+
+  <property>
+    <name>dfs.namenode.keytab.file</name>
+    <value>/etc/hadoop.keytab</value>
+  </property>
+
+  <property>
+    <name>dfs.https.address</name>
+    <value>cosmos03.beta:50470</value>
+  </property>
+
+  <property>
+    <name>dfs.https.port</name>
+    <value>50470</value>
+  </property>
+
+  <property>
+    <name>dfs.secondary.namenode.keytab.file</name>
+    <value>/etc/hadoop.keytab</value>
+  </property>
+
+  <property>
+    <name>dfs.secondary.https.address</name>
+    <value>cosmos04.beta:50495</value>
+  </property>
+
+  <property>
+    <name>dfs.secondary.https.port</name>
+    <value>50495</value>
+  </property>
+
+  <property>
+    <name>dfs.block.access.token.enable</name>
+    <value>true</value>
+  </property>
+
+</configuration>
